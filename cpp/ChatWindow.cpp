@@ -3,8 +3,8 @@
 #include "ui_ChatWindow.h"
  
 #include <QtGui/QCloseEvent>
-#include <QtGui/QInputDialog>
-#include <QtGui/QMessageBox>
+#include <QInputDialog>
+#include <QMessageBox>
  
 #include "Message.h"
  

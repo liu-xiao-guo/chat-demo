@@ -1,6 +1,6 @@
 #include <QtDBus/QDBusConnection>
 #include <QtDBus/QDBusConnectionInterface>
-#include <QtGui/QApplication>
+#include <QApplication>
  
 #include "Chat.h"
 #include "ChatAdaptor.h"
@@ -22,6 +22,8 @@ int main(int argc, char *argv[])
     // service isn't already available.
     QDBusConnection connection = QDBusConnection::sessionBus();
     if (!connection.interface()->isServiceRegistered(CHAT_SERVICE)) {
+        qDebug() << "Service is not registered";
+
         pChat = new Chat(&app);
 
         // Note: The Qt type system hangs on to a reference to this object,

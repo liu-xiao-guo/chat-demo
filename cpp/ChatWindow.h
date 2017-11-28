@@ -1,8 +1,8 @@
 #ifndef CHATWINDOW_H
 #define CHATWINDOW_H
  
-#include <QtGui/QMainWindow>
-#include <QtGui/QStringListModel>
+#include <QMainWindow>
+#include <QStringListModel>
  
 #include "ChatInterface.h"
  

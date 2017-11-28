@@ -1,7 +1,7 @@
 # -------------------------------------------------
 # Project created by QtCreator 2010-04-06T21:08:22
 # -------------------------------------------------
-QT += dbus
+QT += dbus widgets
 CONFIG += debug
 TARGET = DBusChat
 TEMPLATE = app
